@@ -2,7 +2,7 @@ library(dplyr)
 library(readr)
 library(data.table)
 
-mypath <- "C:/Users/aaron.beach/OneDrive - nswis.com.au/Projects/Pipeline project/Phase 2 - Canoe Sprint/CSV Dump R State Champs/meta"
+mypath <- "C:/Users/aaron.beach/....../Projects/Pipeline project/Phase 2 - Canoe Sprint/CSV Dump R State Champs/meta"
 
 
 

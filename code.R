@@ -8,7 +8,7 @@ library(dplyr)
 remove(list = ls())
 #Import file with dialog window
 
-TxtData <-  dlg_open(default= "C:/Users/aaron.beach/Dropbox/Kayak 2019-2020/NSWIS 2020 competitions/GP2/Excel Files", Title = "Select a  file")$res
+TxtData <-  dlg_open(default= "C:/Users/aaron.beach/Dropbox/Kayak 2019-2020/.... 2020 competitions/GP2/Excel Files", Title = "Select a  file")$res
 
 #Read the xlsx sheet one that contains race information
 
@@ -160,7 +160,7 @@ racedata[3:(length(intervaltime)+2),2] <-  intervaltime
 racedata <- racedata %>% replace(., is.na(.),"")
 
 #create specified filename i.e. CSVname = First_Last_GrandPrix2_DDMMYYY_SIRC_MK1_500_Senior_FinalA.csv
-directory = "C:/Users/aaron.beach/OneDrive - nswis.com.au/Projects/Pipeline project/Phase 2 - Canoe Sprint/CSV Dump R/"
+directory = "C:/Users/aaron.beach/...../Projects/Pipeline project/Phase 2 - Canoe Sprint/CSV Dump R/"
 Racename = paste0(First_Last,"_",Event,"_",Date,"_",Location,"_",Gender,Class,"_",Distance,"_",Age,"_", Race)
 file <- paste0(directory,First_Last,"_",Event,"_",Date,"_",Location,"_",Gender,Class,"_",Distance,"_",Age,"_", Race,".csv")
 
